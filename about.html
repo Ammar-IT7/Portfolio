@@ -1,0 +1,147 @@
+<|im_end|>
+
+### 3.3 - Projects Page CSS
+
+In order for the project page to show, we have to add some styling to our page. To do this, create a file called "project-styles.css" in your "public/styles/" directory and add the following code:
+
+	body {
+		margin-top: 50px;
+	}
+
+	.jumbotron{
+		background-color:#192e3f;
+		padding-bottom:50px;
+	}
+
+	h4{
+		font-family:'Open Sans', sans-serif;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.card-img-top {
+		max-width:368px !important;
+		border-radius:15px;
+	}
+	
+	@media only screen and (min-width :769px) {
+		/* For desktop: */
+		h4{
+			font-size:200%;
+			padding: 3% 0%;
+			margin-bottom: .8em;
+			line-height:1.5;
+		}
+
+		.card-img-top {
+			max-width:760px !important;
+			border-radius:25px;
+		}
+	}
+
+	@media only screen and (min-width :984px) {
+		/* For tablet */
+		
+		h4{
+			font-size:130%;
+			padding: 3% 0%;
+			margin-bottom: .7em;
+			line-height:1.5;
+		}
+
+		.card-img-top {
+			max-width:960px !important;
+			border-radius:25px;
+		}
+	}
+
+	@media only screen and (min-width :1374px) {
+		/* For laptop */
+		
+		h4{
+			font-size: 180%;
+			padding: 3% 0%;
+			margin-bottom: .6em;
+			line-height:2.5;
+		}
+
+		.card-img-top {
+			max-width:790px !important;
+			border-radius:18px;
+		}
+	}
+
+	@media only screen and (min-width :1376px) {
+		/* For laptop 2 */
+		
+		h4{
+			font-size: 250%;
+			padding: 3% 0%;
+			margin-bottom: .6em;
+			line-height:2.5;
+		}
+
+		.card-img-top {
+			max-width:890px !important;
+			border-radius:18px;
+		}
+	}
+
+	@media only screen and (min-width : 376px) {
+		/* For mobile */
+		
+		h4{
+			font-size:250%;
+			padding: .2em 0% !important;
+		}
+
+		.card-img-top {
+			max-width:auto !important;
+			border-radius:18px;
+		}
+	}
+
+	@media only screen and (min-width :376px) {
+		/* For mobile 2 */
+		
+		h4{
+			font-size:90%;
+			padding:.5em 0% !important;
+		}
+
+		.card-img-top {
+			max-width:auto !important;
+			border-radius:18px;
+		}
+	}
+
+	@media only screen and (min-width :320px) {
+		/* For ipad */
+		
+		h4{
+			font-size:75%;
+			padding:.5em 0% !important;
+		}
+
+		.card-img-top {
+			max-width:auto !important;
+			border-radius:18px;
+		}
+	}
+
+	@media only screen and (min-width :326px) {
+		/* For ipad 2 */
+		
+		h4{
+			font-size:75%;
+			padding:.5em 0% !important;
+		}
+
+		.card-img-top {
+			max-width:auto !important;
+			border-radius:18px;
+		}
+	}
+
+	@media only screen and (min-width :327px) {
+		/* For ip

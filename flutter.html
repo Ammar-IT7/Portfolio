@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .tabbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        .tabbar A {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .tabbar A:hover {
+            background-color: #ccc;
+        }
+        .tabbar A.active {
+            background-color: #333;
+            color: #fff;
+        }
+        .project-content {
+            margin-top: 40px;
+        }
+        .project-card {
+            display: none;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .project-card.active {
+            display: block;
+        }
+        .project-image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .project-image-container img {
+            width: calc(50% - 10px);
+            height: auto;
+            object-fit: cover;
+            margin: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">My Portfolio</h1>
+
+        <nav class="tabbar" id="portfolio-tabs">
+            <A href="#project1" data-target="project1" class="active">Project 1</A>
+            <A href="#project2" data-target="project2">Project 2</A>
+            <A href="#project3" data-target="project3">Project 3</A>
+            <A href="#project4" data-target="project4">Project 4</A>
+            <A href="#project5" data-target="project5">Project 5</A>
+        </nav>
+
+        <div class="project-content">
+            <div id="project1" class="project-card active">
+                <h2 class="title">Project 1</h2>
+                <p class="description">Description for Project 1.</p>
+                <div class="project-image-container">
+                    <img src="image1.jpg" alt="Image of Project 1">
+                    <img src="image2.jpg" alt="Image of Project 1">
+                    <img src="image3.jpg" alt="Image of Project 1">
+                </div>
+            </div>
+
+            <div id="project2" class="project-card">
+                <h2 class="title">Project 2</h2>
+                <p class="description">Description for Project 2.</p>
+                <div class="project-image-container">
+                    <img src="image4.jpg" alt="Image of Project 2">
